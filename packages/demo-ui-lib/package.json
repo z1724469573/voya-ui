@@ -11,7 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "@demo-ui-lib/foo": "workspace:^",
-    "@demo-ui-lib/table": "workspace:^"
+    "@demo-ui-lib/table": "workspace:^",
+    "@demo-ui-lib/vbutton": "workspace:^"
   },
   "devDependencies": {
     "rimraf": "^3.0.2",

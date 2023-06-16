@@ -1,11 +1,8 @@
 <template>
-  <div>
-    yyg-table
-  </div>
+  <div>在这里开发</div>
 </template>
 
 <script lang="ts" setup name="yyg-table">
-import { defineProps } from 'vue'
 import { tableProps } from './types'
 
 defineProps(tableProps)
