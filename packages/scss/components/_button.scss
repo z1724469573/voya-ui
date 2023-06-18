@@ -1,0 +1,124 @@
+$fontColor      :white;
+$backgroundColor:inherit;
+
+@mixin setStyle($c, $bc, $br) {
+  color           : $c;
+  background-color: $bc;
+  border          : $br solid 1px;
+}
+
+@mixin setSize($w, $h, $a) {
+  aspect-ratio   : $a;
+  display        : inline-flex;
+  justify-content: center;
+  align-items    : center;
+  padding        : $w $h $w $h;
+}
+
+%base {
+  outline            : none;
+  position           : relative;
+  display            : inline-block;
+  font-weight        : 400;
+  white-space        : nowrap;
+  text-align         : center;
+  background-image   : none;
+  margin             : 3px;
+  border-radius      : 6px 6px;
+  cursor             : pointer;
+  user-select        : none;
+  -webkit-user-select: none;
+  touch-action       : manipulation;
+  line-height        : 24px;
+}
+
+%base-class {
+  @extend %base;
+  @include setStyle(black, transparent, transparent);
+}
+
+%base-animation {
+  transition: all 0.3s;
+}
+
+%base-animation--solid {
+  @extend %base-animation;
+  opacity: 0.6;
+}
+
+%base-class--default {
+  @extend %base-class;
+  border          : grey solid 1px;
+  background-color: $backgroundColor;
+  color           : inherit;
+}
+
+%base-class--primary {
+  @extend %base-class;
+  @include setStyle(white, dodgerblue, dodgerblue);
+}
+
+
+
+
+.voya-button {
+  @extend %base-class--default;
+
+  &:hover {
+    @extend %base-animation--solid;
+  }
+}
+
+.voya-button--primary {
+  @extend %base-class--primary;
+
+  &:hover {
+    @extend %base-animation--solid;
+  }
+}
+%base-class--success {
+  @extend %base-class;
+  @include setStyle(white, limegreen, limegreen);
+}
+.voya-button--success {
+  @extend %base-class--success;
+  &:hover {
+    @extend %base-animation--solid;
+  }
+}
+%base-class--Info {
+  @extend %base-class;
+  @include setStyle(white, grey, grey);
+}
+
+.voya-button--info {
+  @extend %base-class--Info;
+  &:hover {
+    @extend %base-animation--solid;
+  }
+}
+
+%base-class--warning {
+  @extend %base-class;
+  @include setStyle(white, darkorange, darkorange);
+}
+
+.voya-button--warning {
+  @extend %base-class--warning;
+
+  &:hover {
+    @extend %base-animation--solid;
+  }
+}
+
+%base-class--danger {
+  @extend %base-class;
+  @include setStyle(white, #f56c6c, #f56c6c);
+}
+.voya-button--danger {
+  @extend %base-class--danger;
+
+  &:hover {
+    @extend %base-animation--solid;
+  }
+}

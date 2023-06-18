@@ -1,11 +1,9 @@
 
-# Button 按钮
+# Scrollbar 滚动条
 
-用于按钮
 ## 基本使用
 
-由 `type` 属性来选择 Button 的类型。我们可以指定`type=""`来指定`type`的类型，我们内置了`default`,`primary`,`success`,`warning`,`Info`,`rainbow`,`danger`不同的属性。
-<preview path="../demos/vbutton/type.vue" title="基本使用" description=" "></preview>
+<preview path="../demos/scrollbar/scrollbar-1.vue" title="基本使用" description=" "></preview>
 
 ## 组件 API
 

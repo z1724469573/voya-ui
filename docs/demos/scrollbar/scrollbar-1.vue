@@ -1,0 +1,9 @@
+<template>
+  <voya-scrollbar></voya-scrollbar>
+</template>
+
+<script lang="ts" setup>
+</script>
+
+<style scoped lang="scss">
+</style>

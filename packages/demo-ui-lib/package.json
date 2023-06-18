@@ -11,6 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "@demo-ui-lib/foo": "workspace:^",
+    "@demo-ui-lib/icon": "workspace:^",
+    "@demo-ui-lib/scrollbar": "workspace:^",
     "@demo-ui-lib/table": "workspace:^",
     "@demo-ui-lib/vbutton": "workspace:^"
   },
